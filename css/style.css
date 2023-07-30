@@ -1,0 +1,285 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-shadow: 0px 10px 25px #00000043;
+    height: 60px;
+}
+
+/* navigation bar style */
+.main-nav{
+    display: flex;
+    padding: 10px;
+    column-gap: 30px;
+    padding-top: 18px;
+}
+/* link decoration */
+.main-nav a{
+    font-size: 20px;
+    color: #a2a8d3;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.main-nav a:hover{
+    color: #fb6376;
+}
+
+#selected{
+    color: #f70776;
+}
+
+/* input{
+    margin: 10px 40px;
+} */
+
+
+.img-suit{
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+}
+
+#suit-card{
+    margin: 100px;
+    width: 300px;
+    background-color: #ececec;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container{
+    padding: 2px 16px;
+}
+
+/*Main content*/
+
+#products-intro{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: auto;
+    column-gap: 30px;
+}
+
+.product-start{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 15px auto;
+}
+
+.product-start h3{
+    margin: 0;
+}
+
+.product-start a, .product-container a{
+    font-weight: bold;
+    color: #5762d5;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.product-start a:hover, .product-container a:hover{
+    color: #f70776;
+}
+
+.product-card{
+    background-color: #e9e6f0;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.product-img{
+    border-radius: 20px 20px 0 0;
+}
+
+.product-container{
+    padding: 10px 20px;
+}
+
+
+#footer{
+    padding: 10px;
+    background-color: #2b2343;
+    height: 100px;
+    width: 100%;
+}
+
+.container-footer{
+    
+    text-align: center;
+    color: #e9e6f0;
+}
+
+/*intro section*/
+
+#intro{
+    display: flex;
+    width: 1000px;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+
+.video-content{
+    width: 50%;
+}
+
+#intro h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#intro p{
+    font-size: 18px;
+    margin: 0 0 40px;
+    color: #3c404a;
+}
+
+#intro a{
+    background-color: #5762d5;
+    padding: 10px 25px;
+    border-radius: 0.8rem;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color .3s;
+    cursor: pointer;
+    animation: slide-up 1s;
+    display: block;
+    width: fit-content;
+}
+
+#intro a:hover{
+    background-color: #3f49af;
+}
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(40px);
+        opacity: 0%;
+    }
+    70%{
+        transform: translateY(-5px);
+    }
+    85%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+video{
+    width: 40%;
+    border-radius: 1rem;
+}
+
+/*Main content*/
+#nav-cat{
+    background-color: crimson;
+    width: 50%;
+}
+
+
+/*form design*/
+
+.signup{
+    width: 400px;
+    border-radius: 10px;
+    background-color: #eeeff1;
+    padding: 25px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+form input{
+    width: 90%;
+    outline: none;
+    border: 1px solid #3c404a;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+    background: #e4e4e4;
+}
+
+
+
+button{
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 25%;
+    font-weight: bold;
+    color: #fff;
+    background: #5762d5;
+    cursor: pointer;
+}
+
+/*form design*/
+
+
+/*All suits*/
+
+#product-con{
+    width: 1260px;
+    height: 1260px; 
+    margin: 50px auto;
+    background-color: #f7f7f8;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.suit img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: box-shadow .3s;
+    cursor: pointer;
+    filter: blur(5px);
+}
+
+.suit img:hover{
+    box-shadow: 10px 10px 35px #00000043;
+    filter: blur(0px);
+}
+
+.vertical{
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+
+/*All suits*/
+
+#final-ele aside .title, #final-ele h5, #final-ele aside .text{
+    color: #fb6376;
+}
+
+/*Responsiveness*/
+
+@media (max-width: 1150px){
+    #intro h1{
+        font-size: 20px;
+        font-weight: bold;
+        color: #454fc1;
+    }
+
+    .main-nav a{
+        font-size: 18px;
+        color: #d3a2c3;
+        text-decoration: none;
+    }
+}
+
+
