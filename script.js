@@ -134,6 +134,36 @@ function addBreakTime(){
     console.log(breakTime)
 }
 
+/* var counter = 1;
+while(counter <= 12){
+    addBreakTime()
+    counter++;
+} */
+
+console.log(breakTime)
+
+/* for (var i = 1; i <= 8; i++){
+    addBreakTime()
+} */
+
 /*Practice pomodoro*/
 
-/*TEST commit*/
+/* Practice Even Number - For Loop */
+
+var arr = [13,23,12,45,22,48,66,100]
+
+function EvenNumbers(){
+    for (var i = 0; arr.length; i++){
+        if (arr[i] % 2 === 0){
+            console.log(arr[i] + " is even");
+        }
+        else {
+            console.log(arr[i] + " is odd");
+        }
+    }
+}
+
+EvenNumbers();
+
+
+
